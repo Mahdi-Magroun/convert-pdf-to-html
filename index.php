@@ -22,7 +22,9 @@ include '/var/www/html/api/convertPdfHtml/vendor/autoload.php';
 <?php
 
 if(isset($_POST['submit'])){
-    print_r($_FILES['fileToUpload']);
+
+
+
     $targetFile= "/var/www/html/api/convertPdfHtml/input/".$_FILES['fileToUpload']['name'];
     move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$targetFile);
     echo $targetFile;
@@ -39,4 +41,8 @@ $converterFactory = new ConverterFactory($targetFile);
 $converter = $converterFactory->createPdfToHtml($options);
 $html = $converter->createHtml();
 }
+/**
+ * mvc : structure 
+ * 
+ */
 ?>
