@@ -25,15 +25,18 @@ class fileUpload extends File
 
     public function uploadfile(array $allowedExtention){
         // verify extention 
-        if(File::checkIfExtensionIsAllowed()){
-            move_uploaded_file(parent::getFileLocation(),$fileUploadLocation.$this->fileName);
+        if(parent::checkIfExtensionIsAllowed($allowedExtention)){
+            move_uploaded_file(parent::getFileLocation(),$this->fileUploadLocation.$this->getfileName());
+            
         }
         else {
             throw new Exception("extention not allowed", 1);
         }
 
     }
-
+public function getFileUploadLocation(){
+    return $this->fileUploadLocation;
+}
 
   
     

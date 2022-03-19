@@ -1,8 +1,8 @@
 <?php 
-require_once('file.class.php');
+require_once('fileUpload.class.php');
 use Wbrframe\PdfToHtml\Converter\ConverterFactory;
 use Wbrframe\PdfToHtml\Converter\PopplerUtils\PdfToHtmlOptions;
-class Convert {
+class Convert { 
 
     private $outputfolder;
     private $outputFilePath;
@@ -16,13 +16,15 @@ class Convert {
 
 
 public function convert($Path){
+
 $this->setOutPut($Path);
 $this->setOption();
 // initiate
-$converterFactory = new ConverterFactory($this->upload->getFileLocation());
+$location= $this->upload->getFileUploadLocation().$this->upload->getFileName();
+$converterFactory = new ConverterFactory($location);
 $converter = $converterFactory->createPdfToHtml($this->options);
-$converter->createHtml();
 
+$converter->createHtml();
 }
 
 private function setOption(){
@@ -32,9 +34,9 @@ private function setOption(){
     ->setOutputFilePath($this->outputFilePath);
 }
 
-public function setOutPut(string $Path){
+private function setOutPut(string $Path){
     $this->outputfolder=$Path;
-    $this->outputFilePath=$Path.$this->upload->getFileName();
+    $this->outputFilePath=$Path.'/'.$this->upload->getFileName();
 
 
 }

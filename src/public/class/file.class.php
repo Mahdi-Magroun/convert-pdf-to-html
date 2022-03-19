@@ -6,18 +6,17 @@ class File {
     private $fileName;
     private $fileLocation;
     private $fileSize;
+
     public function __construct( array $file){
-        $this->fileName=$fileName;
-        $this->fileExtension=pathinfo($fileName,'PATHINFO_EXTENSION');
+        $this->fileName=$file['name'];
+        $this->fileExtension=pathinfo($this->fileName,PATHINFO_EXTENSION);
         $this->fileLocation=$file['tmp_name'];
         $this->fileSize=$file['size']; 
     } 
 
 
-    public static function checkIfExtensionIsAllowed(array $ext){
-        if( in_array($this->fileExtension,$ext))
-           return true;
-        return false; 
+    public function checkIfExtensionIsAllowed(array $ext){
+       return in_array($this->fileExtension,$ext);
     }
 
 
@@ -28,10 +27,10 @@ class File {
 
 
     public function getFileLocation(){
-        return $this->$fileLocation;
+        return $this->fileLocation;
     }
     public function getFileName(){
-        return $this->$fileName;
+        return $this->fileName;
     }
     public function getExtension(){
         return $this->fileExtention;

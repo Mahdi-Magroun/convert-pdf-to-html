@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>PowerPoint Presentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<meta name="author" content="Oracle"/>
+<meta name="date" content="2020-10-20T09:01:59+00:00"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<!-- Page 1 -->
+<a name="1"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:41px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page1-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:327px;left:225px;white-space:nowrap" class="ft10"><b>Restreindre&#160;et&#160;trier&#160;les&#160;données</b></p>
+</div>
+<!-- Page 2 -->
+<a name="2"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft21{font-size:32px;font-family:Arial;color:#000000;}
+	.ft22{font-size:32px;font-family:ArialMT;color:#ff0000;}
+-->
+</style>
+<div id="page2-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:450px;white-space:nowrap" class="ft20"><b>Objectifs</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft21"><b>A la fin&#160;de ce&#160;TP,&#160;vous&#160;pourrez&#160;:</b></p>
+<p style="position:absolute;top:266px;left:117px;white-space:nowrap" class="ft22">•</p>
+<p style="position:absolute;top:272px;left:171px;white-space:nowrap" class="ft21"><b>limiter les lignes&#160;extraites&#160;par une&#160;interrogation</b></p>
+<p style="position:absolute;top:313px;left:117px;white-space:nowrap" class="ft22">•</p>
+<p style="position:absolute;top:320px;left:171px;white-space:nowrap" class="ft21"><b>trier les&#160;lignes&#160;extraites&#160;par&#160;une&#160;interrogation</b></p>
+</div>
+<!-- Page 3 -->
+<a name="3"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft33{font-size:27px;font-family:Arial;color:#000000;}
+	.ft34{font-size:30px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft35{font-size:36px;font-family:Arial;color:#000000;}
+	.ft36{font-size:27px;line-height:30px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page3-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:134px;white-space:nowrap" class="ft30"><b>Limiter&#160;les lignes&#160;à l'aide&#160;d'une&#160;sélection</b></p>
+<p style="position:absolute;top:536px;left:219px;white-space:nowrap" class="ft36"><b>&#34;extraire&#160;tous&#160;les&#160;<br/>employés&#160;du&#160;<br/>département&#160;90&#34;</b></p>
+<p style="position:absolute;top:222px;left:112px;white-space:nowrap" class="ft34"><b>EMPLOYEES</b></p>
+<p style="position:absolute;top:449px;left:132px;white-space:nowrap" class="ft35"><b>…</b></p>
+</div>
+<!-- Page 4 -->
+<a name="4"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft47{font-size:32px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft48{font-size:27px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft49{font-size:27px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft410{font-size:32px;line-height:37px;font-family:Arial;color:#000000;}
+	.ft411{font-size:27px;line-height:32px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft412{font-size:27px;line-height:32px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page4-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:223px;white-space:nowrap" class="ft40"><b>Limiter les&#160;lignes&#160;sélectionnées</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft42">•</p>
+<p style="position:absolute;top:224px;left:171px;white-space:nowrap" class="ft410"><b>Restreindre&#160;les lignes&#160;renvoyées&#160;à l'aide de&#160;la&#160;<br/>clause&#160;</b></p>
+<p style="position:absolute;top:258px;left:283px;white-space:nowrap" class="ft47"><b>WHERE&#160;:</b></p>
+<p style="position:absolute;top:446px;left:117px;white-space:nowrap" class="ft42">•</p>
+<p style="position:absolute;top:452px;left:171px;white-space:nowrap" class="ft41"><b>La&#160;clause&#160;</b></p>
+<p style="position:absolute;top:448px;left:331px;white-space:nowrap" class="ft47"><b>WHERE&#160;suit&#160;la clause&#160;FROM.</b></p>
+<p style="position:absolute;top:322px;left:115px;white-space:nowrap" class="ft412"><b>SELECT *|{[DISTINCT]&#160;<i>column</i></b><b>|<i>expression&#160;</i></b><b>[<i>alias</i></b><b>],...}<br/>FROM&#160;&#160;&#160;<i>table<br/></i></b><b>[WHERE&#160;<i>condition(s)</i></b><b>];</b></p>
+</div>
+<!-- Page 5 -->
+<a name="5"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft513{font-size:41px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page5-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:226px;left:115px;white-space:nowrap" class="ft511"><b>SELECT employee_id,&#160;last_name,&#160;job_id,&#160;department_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; department_id&#160;=&#160;90&#160;;</b></p>
+<p style="position:absolute;top:72px;left:305px;white-space:nowrap" class="ft50"><b>Utiliser la clause&#160;</b></p>
+<p style="position:absolute;top:68px;left:649px;white-space:nowrap" class="ft513"><b>WHERE</b></p>
+</div>
+<!-- Page 6 -->
+<a name="6"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft614{font-size:32px;line-height:39px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page6-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:496px;left:115px;white-space:nowrap" class="ft611"><b>SELECT last_name, job_id,&#160;department_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; last_name&#160;=&#160;'Whalen'&#160;;</b></p>
+<p style="position:absolute;top:75px;left:231px;white-space:nowrap" class="ft60"><b>Chaînes&#160;de caractères&#160;et&#160;dates</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft62">•</p>
+<p style="position:absolute;top:225px;left:171px;white-space:nowrap" class="ft614"><b>Les&#160;chaînes&#160;de&#160;caractères&#160;et les&#160;dates&#160;sont&#160;<br/>incluses&#160;entre&#160;apostrophes.</b></p>
+<p style="position:absolute;top:306px;left:117px;white-space:nowrap" class="ft62">•</p>
+<p style="position:absolute;top:312px;left:171px;white-space:nowrap" class="ft614"><b>Les&#160;valeurs&#160;de&#160;type&#160;caractère&#160;distinguent&#160;les&#160;<br/>majuscules&#160;des&#160;minuscules&#160;et&#160;les valeurs&#160;de date&#160;<br/>sont&#160;sensibles&#160;au&#160;format.</b></p>
+<p style="position:absolute;top:432px;left:117px;white-space:nowrap" class="ft62">•</p>
+<p style="position:absolute;top:439px;left:171px;white-space:nowrap" class="ft61"><b>Le&#160;format de&#160;date&#160;par&#160;défaut&#160;est&#160;DD-MON-YY.</b></p>
+</div>
+<!-- Page 7 -->
+<a name="7"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page7-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:263px;white-space:nowrap" class="ft70"><b>Conditions&#160;de&#160;comparaison</b></p>
+<p style="position:absolute;top:188px;left:207px;white-space:nowrap" class="ft73"><b>Opérateur</b></p>
+<p style="position:absolute;top:188px;left:374px;white-space:nowrap" class="ft73"><b>Signification</b></p>
+<p style="position:absolute;top:231px;left:278px;white-space:nowrap" class="ft73"><b>=</b></p>
+<p style="position:absolute;top:231px;left:374px;white-space:nowrap" class="ft73"><b>Egal&#160;à</b></p>
+<p style="position:absolute;top:275px;left:278px;white-space:nowrap" class="ft73"><b>&gt;</b></p>
+<p style="position:absolute;top:275px;left:374px;white-space:nowrap" class="ft73"><b>Supérieur&#160;à</b></p>
+<p style="position:absolute;top:320px;left:264px;white-space:nowrap" class="ft73"><b>&gt;=</b></p>
+<p style="position:absolute;top:320px;left:374px;white-space:nowrap" class="ft73"><b>Supérieur ou égal&#160;à</b></p>
+<p style="position:absolute;top:364px;left:278px;white-space:nowrap" class="ft73"><b>&lt;</b></p>
+<p style="position:absolute;top:364px;left:374px;white-space:nowrap" class="ft73"><b>Inférieur à</b></p>
+<p style="position:absolute;top:407px;left:270px;white-space:nowrap" class="ft73"><b>&lt;=</b></p>
+<p style="position:absolute;top:407px;left:374px;white-space:nowrap" class="ft73"><b>Inférieur ou égal&#160;à</b></p>
+<p style="position:absolute;top:450px;left:270px;white-space:nowrap" class="ft73"><b>&lt;&gt;</b></p>
+<p style="position:absolute;top:450px;left:374px;white-space:nowrap" class="ft73"><b>Non égal&#160;à</b></p>
+<p style="position:absolute;top:488px;left:207px;white-space:nowrap" class="ft711"><b>BETWEEN<br/>...AND...</b></p>
+<p style="position:absolute;top:493px;left:374px;white-space:nowrap" class="ft73"><b>Entre deux valeurs&#160;(incluses)</b></p>
+<p style="position:absolute;top:568px;left:207px;white-space:nowrap" class="ft78"><b>IN(set)</b></p>
+<p style="position:absolute;top:572px;left:374px;white-space:nowrap" class="ft73"><b>Correspond&#160;à une&#160;valeur&#160;quelconque&#160;</b></p>
+<p style="position:absolute;top:611px;left:374px;white-space:nowrap" class="ft73"><b>d'une&#160;liste</b></p>
+<p style="position:absolute;top:657px;left:207px;white-space:nowrap" class="ft78"><b>LIKE</b></p>
+<p style="position:absolute;top:660px;left:374px;white-space:nowrap" class="ft73"><b>Correspond&#160;à un modèle&#160;de caractère</b></p>
+<p style="position:absolute;top:702px;left:207px;white-space:nowrap" class="ft78"><b>IS&#160;NULL</b></p>
+<p style="position:absolute;top:710px;left:374px;white-space:nowrap" class="ft73"><b>Est une&#160;valeur&#160;NULL</b></p>
+</div>
+<!-- Page 8 -->
+<a name="8"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page8-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:225px;left:115px;white-space:nowrap" class="ft811"><b>SELECT last_name, salary<br/>FROM&#160;&#160; employees<br/>WHERE&#160; salary&#160;&lt;=&#160;3000&#160;;</b></p>
+<p style="position:absolute;top:75px;left:148px;white-space:nowrap" class="ft80"><b>Utiliser des&#160;conditions&#160;de comparaison</b></p>
+</div>
+<!-- Page 9 -->
+<a name="9"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page9-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:314px;left:115px;white-space:nowrap" class="ft911"><b>SELECT last_name, salary<br/>FROM&#160;&#160; employees<br/>WHERE&#160; salary&#160;BETWEEN&#160;2500&#160;AND&#160;3500&#160;;</b></p>
+<p style="position:absolute;top:72px;left:251px;white-space:nowrap" class="ft90"><b>Utiliser la condition&#160;</b></p>
+<p style="position:absolute;top:68px;left:653px;white-space:nowrap" class="ft913"><b>BETWEEN</b></p>
+<p style="position:absolute;top:222px;left:104px;white-space:nowrap" class="ft91"><b>Utilisez&#160;la condition&#160;</b></p>
+<p style="position:absolute;top:218px;left:423px;white-space:nowrap" class="ft97"><b>BETWEEN&#160;pour&#160;afficher&#160;les lignes&#160;</b></p>
+<p style="position:absolute;top:264px;left:104px;white-space:nowrap" class="ft91"><b>en&#160;fonction&#160;d'une&#160;plage&#160;de&#160;valeurs&#160;:</b></p>
+<p style="position:absolute;top:467px;left:347px;white-space:nowrap" class="ft93"><b>Limite&#160;inférieure&#160;Limite&#160;supérieure</b></p>
+</div>
+<!-- Page 10 -->
+<a name="10"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page10-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:310px;left:115px;white-space:nowrap" class="ft1011"><b>SELECT employee_id,&#160;last_name,&#160;salary,&#160;manager_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; manager_id IN&#160;(100,&#160;101,&#160;201)&#160;;</b></p>
+<p style="position:absolute;top:72px;left:314px;white-space:nowrap" class="ft100"><b>Utiliser la condition&#160;</b></p>
+<p style="position:absolute;top:68px;left:716px;white-space:nowrap" class="ft1013"><b>IN</b></p>
+<p style="position:absolute;top:222px;left:104px;white-space:nowrap" class="ft101"><b>Utilisez&#160;la condition&#160;d'appartenance&#160;</b></p>
+<p style="position:absolute;top:218px;left:676px;white-space:nowrap" class="ft107"><b>IN&#160;afin&#160;de&#160;tester&#160;</b></p>
+<p style="position:absolute;top:264px;left:104px;white-space:nowrap" class="ft101"><b>les&#160;valeurs&#160;d'une&#160;liste&#160;:</b></p>
+</div>
+<!-- Page 11 -->
+<a name="11"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1115{font-size:30px;font-family:ArialMT;color:#ff0000;}
+	.ft1116{font-size:30px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page11-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:575px;left:115px;white-space:nowrap" class="ft118"><b>SELECT&#160;</b></p>
+<p style="position:absolute;top:575px;left:257px;white-space:nowrap" class="ft118"><b>first_name</b></p>
+<p style="position:absolute;top:608px;left:115px;white-space:nowrap" class="ft118"><b>FROM&#160;</b></p>
+<p style="position:absolute;top:608px;left:257px;white-space:nowrap" class="ft118"><b>employees</b></p>
+<p style="position:absolute;top:640px;left:115px;white-space:nowrap" class="ft118"><b>WHERE</b></p>
+<p style="position:absolute;top:640px;left:257px;white-space:nowrap" class="ft118"><b>first_name&#160;LIKE&#160;'S%'&#160;;</b></p>
+<p style="position:absolute;top:72px;left:289px;white-space:nowrap" class="ft110"><b>Utiliser la condition&#160;</b></p>
+<p style="position:absolute;top:68px;left:690px;white-space:nowrap" class="ft1113"><b>LIKE</b></p>
+<p style="position:absolute;top:216px;left:117px;white-space:nowrap" class="ft112">•</p>
+<p style="position:absolute;top:222px;left:171px;white-space:nowrap" class="ft111"><b>Utilisez&#160;la condition&#160;</b></p>
+<p style="position:absolute;top:219px;left:491px;white-space:nowrap" class="ft117"><b>LIKE&#160;pour&#160;effectuer&#160;des&#160;</b></p>
+<p style="position:absolute;top:264px;left:171px;white-space:nowrap" class="ft1114"><b>recherches&#160;de&#160;chaînes&#160;de&#160;caractères&#160;valides&#160;via&#160;<br/>l'utilisation&#160;de&#160;caractères&#160;génériques.</b></p>
+<p style="position:absolute;top:345px;left:117px;white-space:nowrap" class="ft112">•</p>
+<p style="position:absolute;top:351px;left:171px;white-space:nowrap" class="ft1114"><b>Les&#160;conditions&#160;de&#160;recherche&#160;peuvent&#160;contenir&#160;soit&#160;<br/>des&#160;caractères littéraux,&#160;soit&#160;des&#160;nombres&#160;:</b></p>
+<p style="position:absolute;top:429px;left:185px;white-space:nowrap" class="ft1115">–&#160;<b>%&#160;indique&#160;un nombre quelconque&#160;de caractères&#160;</b></p>
+<p style="position:absolute;top:473px;left:225px;white-space:nowrap" class="ft1116"><b>(zéro&#160;ou plus).</b></p>
+<p style="position:absolute;top:509px;left:185px;white-space:nowrap" class="ft1115">–&#160;<b>_&#160;indique&#160;un caractère&#160;unique.</b></p>
+</div>
+<!-- Page 12 -->
+<a name="12"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page12-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft122">•</p>
+<p style="position:absolute;top:225px;left:171px;white-space:nowrap" class="ft1214"><b>Vous&#160;pouvez&#160;combiner&#160;des&#160;caractères&#160;de&#160;mise&#160;en&#160;<br/>correspondance&#160;de&#160;modèle&#160;:</b></p>
+<p style="position:absolute;top:541px;left:117px;white-space:nowrap" class="ft122">•</p>
+<p style="position:absolute;top:547px;left:171px;white-space:nowrap" class="ft121"><b>Vous&#160;pouvez&#160;utiliser&#160;l'identificateur&#160;</b></p>
+<p style="position:absolute;top:543px;left:736px;white-space:nowrap" class="ft127"><b>ESCAPE&#160;pour&#160;</b></p>
+<p style="position:absolute;top:587px;left:171px;white-space:nowrap" class="ft121"><b>rechercher&#160;les&#160;symboles&#160;</b></p>
+<p style="position:absolute;top:583px;left:568px;white-space:nowrap" class="ft127"><b>%&#160;et&#160;_&#160;proprement&#160;dits.</b></p>
+<p style="position:absolute;top:318px;left:115px;white-space:nowrap" class="ft128"><b>SELECT&#160;</b></p>
+<p style="position:absolute;top:318px;left:257px;white-space:nowrap" class="ft128"><b>last_name</b></p>
+<p style="position:absolute;top:350px;left:115px;white-space:nowrap" class="ft128"><b>FROM&#160;</b></p>
+<p style="position:absolute;top:350px;left:257px;white-space:nowrap" class="ft128"><b>employees</b></p>
+<p style="position:absolute;top:382px;left:115px;white-space:nowrap" class="ft128"><b>WHERE</b></p>
+<p style="position:absolute;top:382px;left:257px;white-space:nowrap" class="ft128"><b>last_name&#160;LIKE&#160;'_o%'&#160;;</b></p>
+<p style="position:absolute;top:72px;left:289px;white-space:nowrap" class="ft120"><b>Utiliser la condition&#160;</b></p>
+<p style="position:absolute;top:68px;left:690px;white-space:nowrap" class="ft1213"><b>LIKE</b></p>
+<p style="position:absolute;top:635px;left:115px;white-space:nowrap" class="ft128"><b>SELECT&#160;</b></p>
+<p style="position:absolute;top:635px;left:257px;white-space:nowrap" class="ft128"><b>employee_id, last_name, job_id</b></p>
+<p style="position:absolute;top:667px;left:115px;white-space:nowrap" class="ft128"><b>FROM&#160;</b></p>
+<p style="position:absolute;top:667px;left:257px;white-space:nowrap" class="ft128"><b>employees</b></p>
+<p style="position:absolute;top:700px;left:115px;white-space:nowrap" class="ft128"><b>WHERE&#160;</b></p>
+<p style="position:absolute;top:700px;left:257px;white-space:nowrap" class="ft128"><b>job_id LIKE&#160;'SA\_%'&#160;ESCAPE&#160;'\‘;</b></p>
+</div>
+<!-- Page 13 -->
+<a name="13"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1317{font-size:32px;line-height:33px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page13-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:313px;left:115px;white-space:nowrap" class="ft1311"><b>SELECT last_name, manager_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; manager_id IS&#160;NULL&#160;;</b></p>
+<p style="position:absolute;top:72px;left:289px;white-space:nowrap" class="ft130"><b>Utiliser la condition&#160;</b></p>
+<p style="position:absolute;top:68px;left:690px;white-space:nowrap" class="ft1313"><b>NULL</b></p>
+<p style="position:absolute;top:225px;left:104px;white-space:nowrap" class="ft1317"><b>Testez&#160;la présence&#160;de&#160;valeurs&#160;NULL&#160;avec&#160;l'opérateur&#160;<br/>IS&#160;NULL.</b></p>
+</div>
+<!-- Page 14 -->
+<a name="14"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1418{font-size:27px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page14-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:338px;white-space:nowrap" class="ft140"><b>Conditions&#160;logiques</b></p>
+<p style="position:absolute;top:228px;left:229px;white-space:nowrap" class="ft143"><b>Opérateur&#160;Signification</b></p>
+<p style="position:absolute;top:266px;left:243px;white-space:nowrap" class="ft148"><b>AND</b></p>
+<p style="position:absolute;top:270px;left:380px;white-space:nowrap" class="ft143"><b>Renvoie&#160;</b></p>
+<p style="position:absolute;top:267px;left:493px;white-space:nowrap" class="ft148"><b>TRUE&#160;si&#160;<i>les&#160;deux</i></b></p>
+<p style="position:absolute;top:304px;left:380px;white-space:nowrap" class="ft143"><b>conditions&#160;sont vraies.</b></p>
+<p style="position:absolute;top:342px;left:243px;white-space:nowrap" class="ft148"><b>OR</b></p>
+<p style="position:absolute;top:345px;left:380px;white-space:nowrap" class="ft143"><b>Renvoie&#160;</b></p>
+<p style="position:absolute;top:342px;left:493px;white-space:nowrap" class="ft148"><b>TRUE&#160;si&#160;<i>l'une&#160;des&#160;deux</i></b></p>
+<p style="position:absolute;top:380px;left:380px;white-space:nowrap" class="ft143"><b>conditions&#160;est vraie.</b></p>
+<p style="position:absolute;top:417px;left:245px;white-space:nowrap" class="ft148"><b>NOT</b></p>
+<p style="position:absolute;top:423px;left:380px;white-space:nowrap" class="ft143"><b>Renvoie&#160;</b></p>
+<p style="position:absolute;top:420px;left:493px;white-space:nowrap" class="ft148"><b>TRUE&#160;si la&#160;condition&#160;qui&#160;</b></p>
+<p style="position:absolute;top:459px;left:380px;white-space:nowrap" class="ft143"><b>suit&#160;est&#160;fausse.</b></p>
+</div>
+<!-- Page 15 -->
+<a name="15"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page15-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:318px;left:115px;white-space:nowrap" class="ft1511"><b>SELECT&#160;employee_id,&#160;last_name,&#160;job_id,&#160;salary<br/>FROM&#160;&#160;&#160;employees<br/>WHERE&#160;&#160;salary&#160;&gt;=&#160;10000<br/>AND&#160;&#160;&#160;&#160;job_id&#160;LIKE&#160;'%MAN%'&#160;;</b></p>
+<p style="position:absolute;top:72px;left:312px;white-space:nowrap" class="ft150"><b>Utiliser l'opérateur&#160;</b></p>
+<p style="position:absolute;top:68px;left:693px;white-space:nowrap" class="ft1513"><b>AND</b></p>
+<p style="position:absolute;top:220px;left:103px;white-space:nowrap" class="ft151"><b>L'opérateur&#160;</b></p>
+<p style="position:absolute;top:217px;left:292px;white-space:nowrap" class="ft157"><b>AND&#160;nécessite&#160;que&#160;les deux&#160;conditions&#160;</b></p>
+<p style="position:absolute;top:260px;left:103px;white-space:nowrap" class="ft151"><b>soient&#160;vraies&#160;:</b></p>
+</div>
+<!-- Page 16 -->
+<a name="16"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page16-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:318px;left:115px;white-space:nowrap" class="ft1611"><b>SELECT employee_id,&#160;last_name,&#160;job_id,&#160;salary<br/>FROM&#160;&#160; employees<br/>WHERE&#160; salary&#160;&gt;=&#160;10000<br/>OR&#160;&#160;&#160;&#160; job_id&#160;LIKE&#160;'%MAN%'&#160;;</b></p>
+<p style="position:absolute;top:72px;left:324px;white-space:nowrap" class="ft160"><b>Utiliser l'opérateur&#160;</b></p>
+<p style="position:absolute;top:68px;left:706px;white-space:nowrap" class="ft1613"><b>OR</b></p>
+<p style="position:absolute;top:220px;left:103px;white-space:nowrap" class="ft161"><b>L'opérateur&#160;</b></p>
+<p style="position:absolute;top:217px;left:292px;white-space:nowrap" class="ft167"><b>OR&#160;nécessite&#160;que&#160;l'une&#160;des deux&#160;conditions&#160;</b></p>
+<p style="position:absolute;top:260px;left:103px;white-space:nowrap" class="ft161"><b>soit&#160;vraie&#160;:</b></p>
+</div>
+<!-- Page 17 -->
+<a name="17"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page17-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:226px;left:115px;white-space:nowrap" class="ft1711"><b>SELECT last_name, job_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; job_id&#160;</b></p>
+<p style="position:absolute;top:323px;left:228px;white-space:nowrap" class="ft178"><b>NOT&#160;IN&#160;('IT_PROG',&#160;'ST_CLERK',&#160;'SA_REP')&#160;;</b></p>
+<p style="position:absolute;top:72px;left:312px;white-space:nowrap" class="ft170"><b>Utiliser l'opérateur&#160;</b></p>
+<p style="position:absolute;top:68px;left:693px;white-space:nowrap" class="ft1713"><b>NOT</b></p>
+</div>
+<!-- Page 18 -->
+<a name="18"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page18-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:362px;white-space:nowrap" class="ft180"><b>Règles&#160;de&#160;priorité</b></p>
+<p style="position:absolute;top:679px;left:212px;white-space:nowrap" class="ft183"><b>Vous&#160;pouvez&#160;utiliser&#160;des&#160;parenthèses&#160;pour&#160;remplacer&#160;des&#160;</b></p>
+<p style="position:absolute;top:709px;left:468px;white-space:nowrap" class="ft183"><b>règles de priorité.</b></p>
+<p style="position:absolute;top:224px;left:223px;white-space:nowrap" class="ft183"><b>Opérateur</b></p>
+<p style="position:absolute;top:224px;left:380px;white-space:nowrap" class="ft183"><b>Signification</b></p>
+<p style="position:absolute;top:267px;left:290px;white-space:nowrap" class="ft183"><b>1</b></p>
+<p style="position:absolute;top:267px;left:380px;white-space:nowrap" class="ft183"><b>Opérateurs&#160;arithmétiques</b></p>
+<p style="position:absolute;top:312px;left:290px;white-space:nowrap" class="ft183"><b>2</b></p>
+<p style="position:absolute;top:312px;left:380px;white-space:nowrap" class="ft183"><b>Opérateur de concaténation</b></p>
+<p style="position:absolute;top:357px;left:290px;white-space:nowrap" class="ft183"><b>3</b></p>
+<p style="position:absolute;top:357px;left:380px;white-space:nowrap" class="ft183"><b>Conditions&#160;de comparaison</b></p>
+<p style="position:absolute;top:400px;left:290px;white-space:nowrap" class="ft183"><b>4</b></p>
+<p style="position:absolute;top:394px;left:380px;white-space:nowrap" class="ft188"><b>IS&#160;[NOT]&#160;NULL,&#160;LIKE,&#160;[NOT]&#160;IN</b></p>
+<p style="position:absolute;top:443px;left:290px;white-space:nowrap" class="ft183"><b>5</b></p>
+<p style="position:absolute;top:438px;left:380px;white-space:nowrap" class="ft188"><b>[NOT]&#160;BETWEEN</b></p>
+<p style="position:absolute;top:486px;left:290px;white-space:nowrap" class="ft183"><b>6</b></p>
+<p style="position:absolute;top:486px;left:380px;white-space:nowrap" class="ft183"><b>Non égal&#160;à</b></p>
+<p style="position:absolute;top:530px;left:290px;white-space:nowrap" class="ft183"><b>7</b></p>
+<p style="position:absolute;top:528px;left:380px;white-space:nowrap" class="ft183"><b>Condition&#160;logique&#160;</b></p>
+<p style="position:absolute;top:525px;left:617px;white-space:nowrap" class="ft188"><b>NOT</b></p>
+<p style="position:absolute;top:576px;left:290px;white-space:nowrap" class="ft183"><b>8</b></p>
+<p style="position:absolute;top:576px;left:380px;white-space:nowrap" class="ft183"><b>Condition&#160;logique&#160;</b></p>
+<p style="position:absolute;top:573px;left:617px;white-space:nowrap" class="ft188"><b>AND</b></p>
+<p style="position:absolute;top:625px;left:290px;white-space:nowrap" class="ft183"><b>9</b></p>
+<p style="position:absolute;top:625px;left:380px;white-space:nowrap" class="ft183"><b>Condition&#160;logique&#160;</b></p>
+<p style="position:absolute;top:622px;left:617px;white-space:nowrap" class="ft188"><b>OR</b></p>
+</div>
+<!-- Page 19 -->
+<a name="19"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1919{font-size:27px;font-family:ABCDEE+CourierNewPS;color:#ff0000;}
+	.ft1920{font-size:27px;line-height:32px;font-family:ABCDEE+CourierNewPS;color:#ff0000;}
+-->
+</style>
+<div id="page19-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:193px;left:115px;white-space:nowrap" class="ft1911"><b>SELECT last_name, job_id,&#160;salary<br/>FROM&#160;&#160; employees<br/>WHERE&#160; job_id&#160;=&#160;'SA_REP'<br/>OR&#160;&#160;&#160;&#160; job_id&#160;=&#160;'AD_PRES'<br/>AND&#160;&#160;&#160; salary&#160;&gt;&#160;15000;</b></p>
+<p style="position:absolute;top:75px;left:362px;white-space:nowrap" class="ft190"><b>Règles&#160;de&#160;priorité</b></p>
+<p style="position:absolute;top:508px;left:115px;white-space:nowrap" class="ft1920"><b>SELECT last_name, job_id,&#160;salary<br/>FROM&#160;&#160; employees<br/>WHERE&#160;&#160;(job_id&#160;=&#160;'SA_REP'<br/>OR&#160;&#160;&#160;&#160; job_id&#160;=&#160;'AD_PRES')<br/>AND&#160;&#160;&#160; salary&#160;&gt;&#160;15000;</b></p>
+<p style="position:absolute;top:255px;left:884px;white-space:nowrap" class="ft195"><b>1</b></p>
+<p style="position:absolute;top:561px;left:884px;white-space:nowrap" class="ft195"><b>2</b></p>
+</div>
+<!-- Page 20 -->
+<a name="20"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft2021{font-size:30px;line-height:43px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page20-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:72px;left:268px;white-space:nowrap" class="ft200"><b>Utiliser la clause&#160;</b></p>
+<p style="position:absolute;top:68px;left:611px;white-space:nowrap" class="ft2013"><b>ORDER&#160;BY</b></p>
+<p style="position:absolute;top:216px;left:116px;white-space:nowrap" class="ft202">•</p>
+<p style="position:absolute;top:222px;left:170px;white-space:nowrap" class="ft201"><b>Trier les&#160;lignes&#160;extraites&#160;à l'aide&#160;de&#160;la&#160;clause&#160;</b></p>
+<p style="position:absolute;top:219px;left:875px;white-space:nowrap" class="ft207"><b>ORDER&#160;BY&#160;:</b></p>
+<p style="position:absolute;top:263px;left:184px;white-space:nowrap" class="ft2021">–&#160;<b>ASC&#160;:&#160;ordre&#160;croissant&#160;(par&#160;défaut)<br/></b>–&#160;<b>DESC&#160;:&#160;ordre&#160;décroissant</b></p>
+<p style="position:absolute;top:350px;left:116px;white-space:nowrap" class="ft202">•</p>
+<p style="position:absolute;top:356px;left:170px;white-space:nowrap" class="ft201"><b>La&#160;clause&#160;</b></p>
+<p style="position:absolute;top:353px;left:331px;white-space:nowrap" class="ft207"><b>ORDER&#160;BY&#160;vient&#160;en&#160;dernier&#160;dans&#160;l'instruction&#160;</b></p>
+<p style="position:absolute;top:392px;left:170px;white-space:nowrap" class="ft207"><b>SELECT&#160;:</b></p>
+<p style="position:absolute;top:436px;left:115px;white-space:nowrap" class="ft2011"><b>SELECT &#160;&#160;last_name,&#160;job_id,&#160;department_id,&#160;hire_date<br/>FROM&#160;&#160; &#160;&#160;employees<br/>ORDER&#160;BY&#160;hire_date&#160;;</b></p>
+<p style="position:absolute;top:685px;left:119px;white-space:nowrap" class="ft205"><b>…</b></p>
+</div>
+<!-- Page 21 -->
+<a name="21"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page21-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:493px;white-space:nowrap" class="ft210"><b>Trier</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft212">•</p>
+<p style="position:absolute;top:225px;left:171px;white-space:nowrap" class="ft211"><b>Trier par&#160;ordre&#160;décroissant&#160;:</b></p>
+<p style="position:absolute;top:377px;left:117px;white-space:nowrap" class="ft212">•</p>
+<p style="position:absolute;top:383px;left:171px;white-space:nowrap" class="ft211"><b>Trier par&#160;alias de&#160;colonne&#160;:</b></p>
+<p style="position:absolute;top:551px;left:117px;white-space:nowrap" class="ft212">•</p>
+<p style="position:absolute;top:557px;left:171px;white-space:nowrap" class="ft211"><b>Trier selon&#160;plusieurs&#160;colonnes&#160;:</b></p>
+<p style="position:absolute;top:268px;left:115px;white-space:nowrap" class="ft2111"><b>SELECT &#160;&#160;last_name,&#160;job_id,&#160;department_id,&#160;hire_date<br/>FROM&#160;&#160; &#160;&#160;employees<br/>ORDER&#160;BY&#160;hire_date&#160;DESC ;</b></p>
+<p style="position:absolute;top:317px;left:914px;white-space:nowrap" class="ft215"><b>1</b></p>
+<p style="position:absolute;top:438px;left:115px;white-space:nowrap" class="ft2111"><b>SELECT employee_id,&#160;last_name,&#160;salary*12&#160;annsal<br/>FROM&#160;&#160; employees<br/>ORDER&#160;BY&#160;annsal&#160;;</b></p>
+<p style="position:absolute;top:474px;left:914px;white-space:nowrap" class="ft215"><b>2</b></p>
+<p style="position:absolute;top:613px;left:115px;white-space:nowrap" class="ft2111"><b>SELECT last_name, department_id,&#160;salary<br/>FROM&#160;&#160; employees<br/>ORDER&#160;BY&#160;department_id, salary&#160;DESC;</b></p>
+<p style="position:absolute;top:641px;left:914px;white-space:nowrap" class="ft215"><b>3</b></p>
+</div>
+<!-- Page 22 -->
+<a name="22"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft2222{font-size:27px;font-family:Arial;color:#ff0000;}
+	.ft2223{font-size:27px;font-family:Arial;color:#ff3300;}
+	.ft2224{font-size:27px;line-height:37px;font-family:Arial;color:#ff0000;}
+-->
+</style>
+<div id="page22-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:290px;white-space:nowrap" class="ft220"><b>Variables&#160;de&#160;substitution</b></p>
+<p style="position:absolute;top:240px;left:388px;white-space:nowrap" class="ft2222"><b>...&#160;salary&#160;= ?</b></p>
+<p style="position:absolute;top:235px;left:551px;white-space:nowrap" class="ft2222"><b>…</b></p>
+<p style="position:absolute;top:268px;left:388px;white-space:nowrap" class="ft2224"><b>…&#160;department_id&#160;=&#160;?&#160;…<br/>...&#160;last_name&#160;= ?&#160;...</b></p>
+<p style="position:absolute;top:386px;left:577px;white-space:nowrap" class="ft223"><b>Je&#160;souhaite</b></p>
+<p style="position:absolute;top:419px;left:588px;white-space:nowrap" class="ft223"><b>interroger</b></p>
+<p style="position:absolute;top:451px;left:582px;white-space:nowrap" class="ft223"><b>différentes</b></p>
+<p style="position:absolute;top:484px;left:601px;white-space:nowrap" class="ft223"><b>valeurs.</b></p>
+</div>
+<!-- Page 23 -->
+<a name="23"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft2325{font-size:30px;line-height:43px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft2326{font-size:30px;line-height:45px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft2327{font-size:30px;line-height:41px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page23-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:290px;white-space:nowrap" class="ft230"><b>Variables&#160;de&#160;substitution</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft232">•</p>
+<p style="position:absolute;top:224px;left:171px;white-space:nowrap" class="ft231"><b>Utilisez&#160;les variables&#160;de&#160;substitution&#160;pour&#160;:</b></p>
+<p style="position:absolute;top:265px;left:185px;white-space:nowrap" class="ft2315">–&#160;<b>Stocker&#160;temporairement&#160;des valeurs,&#160;via&#160;</b></p>
+<p style="position:absolute;top:304px;left:225px;white-space:nowrap" class="ft2316"><b>l'esperluette&#160;d'interprétation&#160;(</b></p>
+<p style="position:absolute;top:301px;left:646px;white-space:nowrap" class="ft234"><b>&amp;)&#160;et&#160;la&#160;double&#160;</b></p>
+<p style="position:absolute;top:340px;left:225px;white-space:nowrap" class="ft2316"><b>esperluette&#160;d'interprétation&#160;(</b></p>
+<p style="position:absolute;top:337px;left:630px;white-space:nowrap" class="ft234"><b>&amp;&amp;)</b></p>
+<p style="position:absolute;top:381px;left:117px;white-space:nowrap" class="ft232">•</p>
+<p style="position:absolute;top:387px;left:171px;white-space:nowrap" class="ft2314"><b>Utilisez&#160;des variables&#160;de&#160;substitution&#160;en&#160;<br/>complément&#160;des&#160;éléments&#160;suivants&#160;:</b></p>
+<p style="position:absolute;top:465px;left:185px;white-space:nowrap" class="ft2327">–&#160;<b>Conditions&#160;WHERE<br/></b>–&#160;<b>Clauses&#160;ORDER BY<br/></b>–&#160;<b>Expressions&#160;de&#160;colonne<br/></b>–&#160;<b>Noms&#160;des tables<br/></b>–&#160;<b>Instructions&#160;SELECT&#160;entières</b></p>
+</div>
+<!-- Page 24 -->
+<a name="24"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page24-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:325px;left:115px;white-space:nowrap" class="ft2411"><b>SELECT employee_id,&#160;last_name,&#160;salary,&#160;department_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; employee_id&#160;=&#160;&amp;employee_num ;</b></p>
+<p style="position:absolute;top:72px;left:185px;white-space:nowrap" class="ft240"><b>Utiliser la variable&#160;de substitution&#160;</b></p>
+<p style="position:absolute;top:68px;left:870px;white-space:nowrap" class="ft2413"><b>&amp;</b></p>
+<p style="position:absolute;top:222px;left:104px;white-space:nowrap" class="ft241"><b>Utilisez&#160;une&#160;variable&#160;précédée&#160;d'une&#160;esperluette&#160;(</b></p>
+<p style="position:absolute;top:218px;left:878px;white-space:nowrap" class="ft247"><b>&amp;)&#160;</b></p>
+<p style="position:absolute;top:264px;left:104px;white-space:nowrap" class="ft241"><b>afin&#160;d'inviter&#160;l'utilisateur&#160;à&#160;saisir une&#160;valeur&#160;:</b></p>
+</div>
+<!-- Page 25 -->
+<a name="25"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page25-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:72px;left:185px;white-space:nowrap" class="ft250"><b>Utiliser la variable&#160;de substitution&#160;</b></p>
+<p style="position:absolute;top:68px;left:870px;white-space:nowrap" class="ft2513"><b>&amp;</b></p>
+<p style="position:absolute;top:365px;left:729px;white-space:nowrap" class="ft255"><b>1</b></p>
+<p style="position:absolute;top:419px;left:884px;white-space:nowrap" class="ft255"><b>2</b></p>
+</div>
+<!-- Page 26 -->
+<a name="26"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page26-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:338px;left:115px;white-space:nowrap" class="ft2611"><b>SELECT last_name, department_id,&#160;salary*12<br/>FROM&#160;&#160; employees<br/>WHERE&#160; job_id&#160;=&#160;'&amp;job_title' ;</b></p>
+<p style="position:absolute;top:75px;left:117px;white-space:nowrap" class="ft260"><b>Valeurs de&#160;type&#160;caractère et date&#160;avec&#160;des&#160;</b></p>
+<p style="position:absolute;top:126px;left:292px;white-space:nowrap" class="ft260"><b>variables&#160;de&#160;substitution</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft2614"><b>Utilisez&#160;des apostrophes&#160;pour&#160;les valeurs&#160;de&#160;type&#160;date&#160;<br/>et&#160;caractère&#160;:</b></p>
+</div>
+<!-- Page 27 -->
+<a name="27"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft2728{font-size:18px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page27-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:205px;white-space:nowrap" class="ft270"><b>Définir des&#160;noms&#160;de&#160;colonne,&#160;des&#160;</b></p>
+<p style="position:absolute;top:126px;left:306px;white-space:nowrap" class="ft270"><b>expressions&#160;et&#160;du&#160;texte</b></p>
+<p style="position:absolute;top:229px;left:115px;white-space:nowrap" class="ft2711"><b>SELECT employee_id,&#160;last_name,&#160;job_id,&amp;column_name<br/>FROM&#160;&#160; employees<br/>WHERE&#160; &amp;condition<br/>ORDER&#160;BY&#160;&amp;order_column&#160;;</b></p>
+<p style="position:absolute;top:476px;left:376px;white-space:nowrap" class="ft2728"><b>salary</b></p>
+<p style="position:absolute;top:577px;left:337px;white-space:nowrap" class="ft2728"><b>salary&#160;&gt;&#160;15000</b></p>
+<p style="position:absolute;top:675px;left:370px;white-space:nowrap" class="ft2728"><b>last_name</b></p>
+</div>
+<!-- Page 28 -->
+<a name="28"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page28-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:343px;left:101px;white-space:nowrap" class="ft2811"><b>SELECT &#160;&#160;employee_id,&#160;last_name,&#160;job_id,&#160;&amp;&amp;column_name<br/>FROM&#160;&#160; &#160;&#160;employees<br/>ORDER&#160;BY&#160;&amp;column_name&#160;;</b></p>
+<p style="position:absolute;top:680px;left:95px;white-space:nowrap" class="ft285"><b>…</b></p>
+<p style="position:absolute;top:72px;left:173px;white-space:nowrap" class="ft280"><b>Utiliser la variable&#160;de substitution&#160;</b></p>
+<p style="position:absolute;top:68px;left:857px;white-space:nowrap" class="ft2813"><b>&amp;&amp;</b></p>
+<p style="position:absolute;top:222px;left:104px;white-space:nowrap" class="ft281"><b>Utilisez&#160;la double&#160;esperluette&#160;(</b></p>
+<p style="position:absolute;top:218px;left:580px;white-space:nowrap" class="ft287"><b>&amp;&amp;)&#160;si vous&#160;souhaitez&#160;</b></p>
+<p style="position:absolute;top:264px;left:104px;white-space:nowrap" class="ft2814"><b>réutiliser&#160;la valeur&#160;de&#160;la variable sans&#160;inviter&#160;chaque&#160;<br/>fois&#160;l'utilisateur&#160;à la&#160;saisir&#160;:</b></p>
+</div>
+<!-- Page 29 -->
+<a name="29"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page29-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:72px;left:146px;white-space:nowrap" class="ft290"><b>Utiliser la commande&#160;SQL*Plus&#160;</b></p>
+<p style="position:absolute;top:68px;left:783px;white-space:nowrap" class="ft2913"><b>DEFINE</b></p>
+<p style="position:absolute;top:216px;left:117px;white-space:nowrap" class="ft292">•</p>
+<p style="position:absolute;top:222px;left:171px;white-space:nowrap" class="ft291"><b>Utilisez&#160;la commande&#160;SQL*Plus&#160;</b></p>
+<p style="position:absolute;top:218px;left:676px;white-space:nowrap" class="ft297"><b>DEFINE&#160;pour&#160;créer&#160;</b></p>
+<p style="position:absolute;top:264px;left:171px;white-space:nowrap" class="ft291"><b>une&#160;valeur&#160;et pour&#160;l'affecter&#160;à une&#160;variable.</b></p>
+<p style="position:absolute;top:303px;left:117px;white-space:nowrap" class="ft292">•</p>
+<p style="position:absolute;top:309px;left:171px;white-space:nowrap" class="ft291"><b>Utilisez&#160;la commande&#160;SQL*Plus&#160;</b></p>
+<p style="position:absolute;top:306px;left:676px;white-space:nowrap" class="ft297"><b>UNDEFINE&#160;pour&#160;</b></p>
+<p style="position:absolute;top:351px;left:171px;white-space:nowrap" class="ft291"><b>supprimer&#160;une&#160;variable.&#160;</b></p>
+<p style="position:absolute;top:421px;left:115px;white-space:nowrap" class="ft298"><b>DEFINE employee_num&#160;=&#160;200</b></p>
+<p style="position:absolute;top:486px;left:115px;white-space:nowrap" class="ft2911"><b>SELECT employee_id,&#160;last_name,&#160;salary,&#160;department_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; employee_id&#160;=&#160;&amp;employee_num ;</b></p>
+<p style="position:absolute;top:616px;left:115px;white-space:nowrap" class="ft298"><b>UNDEFINE&#160;employee_num</b></p>
+</div>
+<!-- Page 30 -->
+<a name="30"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page30-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:647px;left:116px;white-space:nowrap" class="ft3011"><b>old&#160;&#160;&#160;3:&#160;WHERE&#160;&#160;employee_id&#160;=&#160;&amp;employee_num<br/>new&#160;&#160;&#160;3:&#160;WHERE&#160;&#160;employee_id&#160;=&#160;200</b></p>
+<p style="position:absolute;top:396px;left:116px;white-space:nowrap" class="ft3011"><b>SET&#160;VERIFY&#160;ON<br/>SELECT employee_id,&#160;last_name,&#160;salary,&#160;department_id<br/>FROM&#160;&#160; employees<br/>WHERE&#160; employee_id&#160;=&#160;&amp;employee_num;</b></p>
+<p style="position:absolute;top:72px;left:247px;white-space:nowrap" class="ft300"><b>Utiliser la commande&#160;</b></p>
+<p style="position:absolute;top:68px;left:682px;white-space:nowrap" class="ft3013"><b>VERIFY</b></p>
+<p style="position:absolute;top:222px;left:104px;white-space:nowrap" class="ft301"><b>Utilisez&#160;la commande&#160;</b></p>
+<p style="position:absolute;top:218px;left:449px;white-space:nowrap" class="ft307"><b>VERIFY&#160;pour&#160;basculer&#160;l'affichage&#160;</b></p>
+<p style="position:absolute;top:264px;left:104px;white-space:nowrap" class="ft3014"><b>de&#160;la variable&#160;de&#160;substitution,&#160;à&#160;la fois&#160;avant&#160;et&#160;après&#160;le&#160;<br/>remplacement&#160;par SQL*Plus&#160;des&#160;variables&#160;de&#160;<br/>substitution&#160;par&#160;des&#160;valeurs&#160;:</b></p>
+</div>
+<!-- Page 31 -->
+<a name="31"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft3129{font-size:30px;line-height:37px;font-family:Arial;color:#000000;}
+	.ft3130{font-size:30px;line-height:38px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft3131{font-size:32px;line-height:34px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page31-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:532px;left:115px;white-space:nowrap" class="ft3111"><b>SELECT &#160;*|{[DISTINCT]&#160;<i>column|expression&#160;</i></b><b>[<i>alias</i></b><b>],...}<br/>FROM&#160;&#160; &#160;<i>table<br/></i></b><b>[WHERE &#160;<i>condition(s)</i></b><b>]<br/>[ORDER BY&#160;{<i>column, expr, alias</i></b><b>}&#160;[ASC|DESC]]&#160;;</b></p>
+<p style="position:absolute;top:75px;left:447px;white-space:nowrap" class="ft310"><b>Synthèse</b></p>
+<p style="position:absolute;top:219px;left:104px;white-space:nowrap" class="ft311"><b>Ce TP&#160;vous&#160;a permis&#160;d'apprendre&#160;à&#160;:</b></p>
+<p style="position:absolute;top:254px;left:117px;white-space:nowrap" class="ft312">•</p>
+<p style="position:absolute;top:261px;left:171px;white-space:nowrap" class="ft311"><b>utiliser&#160;la clause&#160;</b></p>
+<p style="position:absolute;top:257px;left:437px;white-space:nowrap" class="ft317"><b>WHERE&#160;pour&#160;restreindre&#160;les&#160;lignes&#160;du&#160;</b></p>
+<p style="position:absolute;top:296px;left:171px;white-space:nowrap" class="ft311"><b>résultat&#160;:</b></p>
+<p style="position:absolute;top:332px;left:185px;white-space:nowrap" class="ft3130">–&#160;<b>utiliser&#160;les&#160;conditions&#160;de comparaison<br/></b>–&#160;<b>utiliser&#160;les&#160;conditions&#160;BETWEEN,&#160;IN,&#160;LIKE&#160;et&#160;NULL<br/></b>–&#160;<b>appliquer&#160;les&#160;opérateurs&#160;logiques&#160;AND,&#160;OR&#160;et&#160;NOT</b></p>
+<p style="position:absolute;top:447px;left:117px;white-space:nowrap" class="ft312">•</p>
+<p style="position:absolute;top:453px;left:171px;white-space:nowrap" class="ft311"><b>utiliser&#160;la clause&#160;</b></p>
+<p style="position:absolute;top:449px;left:437px;white-space:nowrap" class="ft317"><b>ORDER&#160;BY&#160;pour&#160;trier les&#160;lignes&#160;du&#160;</b></p>
+<p style="position:absolute;top:489px;left:171px;white-space:nowrap" class="ft311"><b>résultat&#160;:</b></p>
+<p style="position:absolute;top:671px;left:117px;white-space:nowrap" class="ft312">•</p>
+<p style="position:absolute;top:677px;left:171px;white-space:nowrap" class="ft3131"><b>utiliser&#160;l'esperluette&#160;d'interprétation&#160;dans&#160;SQL*Plus&#160;<br/>pour&#160;restreindre&#160;et trier&#160;le résultat&#160;lors&#160;de&#160;l'exécution</b></p>
+</div>
+</body>
+</html>
