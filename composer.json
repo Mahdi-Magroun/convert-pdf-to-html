@@ -1,0 +1,13 @@
+{
+    "name": "mahdi-magroun/convert-pdf-html",
+    "description": "api that convert a given pdf file to html code",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MahdiMagroun\\ConvertPdfHtml\\": "src/"
+        }
+    },
+    "require": {
+        "wbrframe/pdf-to-html": "^2.0"
+    }
+}

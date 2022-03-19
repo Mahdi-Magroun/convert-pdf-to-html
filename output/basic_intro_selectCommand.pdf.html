@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>PowerPoint Presentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<meta name="author" content="Oracle"/>
+<meta name="date" content="2020-10-05T05:52:39+00:00"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<!-- Page 1 -->
+<a name="1"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:41px;font-family:Arial;color:#000000;}
+	.ft11{font-size:48px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page1-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:327px;left:221px;white-space:nowrap" class="ft10"><b>Extraire des&#160;données&#160;à l'aide de&#160;</b></p>
+<p style="position:absolute;top:380px;left:279px;white-space:nowrap" class="ft10"><b>l'instruction&#160;SQL&#160;</b></p>
+<p style="position:absolute;top:370px;left:628px;white-space:nowrap" class="ft11"><b>SELECT</b></p>
+</div>
+<!-- Page 2 -->
+<a name="2"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft22{font-size:32px;font-family:Arial;color:#000000;}
+	.ft23{font-size:32px;font-family:ArialMT;color:#ff0000;}
+	.ft24{font-size:32px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page2-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:450px;white-space:nowrap" class="ft20"><b>Objectifs</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft22"><b>A la fin&#160;de ce&#160;TP,&#160;vous&#160;pourrez&#160;:</b></p>
+<p style="position:absolute;top:264px;left:117px;white-space:nowrap" class="ft23">•</p>
+<p style="position:absolute;top:270px;left:171px;white-space:nowrap" class="ft22"><b>décrire les&#160;fonctionnalités&#160;des&#160;instructions&#160;SQL&#160;</b></p>
+<p style="position:absolute;top:266px;left:932px;white-space:nowrap" class="ft24"><b>SELECT</b></p>
+<p style="position:absolute;top:311px;left:117px;white-space:nowrap" class="ft23">•</p>
+<p style="position:absolute;top:317px;left:171px;white-space:nowrap" class="ft22"><b>exécuter&#160;une&#160;instruction&#160;</b></p>
+<p style="position:absolute;top:314px;left:564px;white-space:nowrap" class="ft24"><b>SELECT&#160;de&#160;base</b></p>
+</div>
+<!-- Page 3 -->
+<a name="3"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft35{font-size:41px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft36{font-size:30px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page3-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:72px;left:86px;white-space:nowrap" class="ft30"><b>Fonctionnalités&#160;des&#160;instructions&#160;SQL&#160;</b></p>
+<p style="position:absolute;top:68px;left:843px;white-space:nowrap" class="ft35"><b>SELECT</b></p>
+<p style="position:absolute;top:225px;left:659px;white-space:nowrap" class="ft32"><b>Sélection</b></p>
+<p style="position:absolute;top:225px;left:197px;white-space:nowrap" class="ft32"><b>Projection</b></p>
+<p style="position:absolute;top:699px;left:197px;white-space:nowrap" class="ft36"><b>Table&#160;1</b></p>
+<p style="position:absolute;top:699px;left:659px;white-space:nowrap" class="ft36"><b>Table&#160;2</b></p>
+<p style="position:absolute;top:451px;left:659px;white-space:nowrap" class="ft36"><b>Table&#160;1</b></p>
+<p style="position:absolute;top:451px;left:197px;white-space:nowrap" class="ft36"><b>Table&#160;1</b></p>
+<p style="position:absolute;top:551px;left:480px;white-space:nowrap" class="ft36"><b>Jointure</b></p>
+</div>
+<!-- Page 4 -->
+<a name="4"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft47{font-size:27px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft48{font-size:27px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+	.ft49{font-size:27px;line-height:32px;font-family:ABCDEE+CourierNewPS;color:#000000;}
+-->
+</style>
+<div id="page4-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:72px;left:266px;white-space:nowrap" class="ft40"><b>Instruction&#160;</b></p>
+<p style="position:absolute;top:68px;left:495px;white-space:nowrap" class="ft45"><b>SELECT&#160;de base</b></p>
+<p style="position:absolute;top:311px;left:117px;white-space:nowrap" class="ft43">•</p>
+<p style="position:absolute;top:317px;left:171px;white-space:nowrap" class="ft42"><b>L'instruction&#160;</b></p>
+<p style="position:absolute;top:314px;left:379px;white-space:nowrap" class="ft44"><b>SELECT&#160;identifie&#160;les&#160;colonnes&#160;à afficher.</b></p>
+<p style="position:absolute;top:359px;left:117px;white-space:nowrap" class="ft43">•</p>
+<p style="position:absolute;top:365px;left:171px;white-space:nowrap" class="ft42"><b>La&#160;clause&#160;</b></p>
+<p style="position:absolute;top:361px;left:331px;white-space:nowrap" class="ft44"><b>FROM&#160;identifie&#160;la table&#160;contenant&#160;ces&#160;</b></p>
+<p style="position:absolute;top:407px;left:171px;white-space:nowrap" class="ft42"><b>colonnes.</b></p>
+<p style="position:absolute;top:225px;left:114px;white-space:nowrap" class="ft49"><b>SELECT *|{[DISTINCT]&#160;<i>column</i></b><b>|<i>expression&#160;</i></b><b>[<i>alias</i></b><b>],...}<br/>FROM&#160;</b></p>
+<p style="position:absolute;top:257px;left:243px;white-space:nowrap" class="ft48"><i><b>table;</b></i></p>
+</div>
+<!-- Page 5 -->
+<a name="5"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page5-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:212px;white-space:nowrap" class="ft50"><b>Sélectionner&#160;toutes&#160;les&#160;colonnes</b></p>
+<p style="position:absolute;top:225px;left:114px;white-space:nowrap" class="ft59"><b>SELECT *<br/>FROM&#160;&#160; departments;</b></p>
+</div>
+<!-- Page 6 -->
+<a name="6"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page6-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:152px;white-space:nowrap" class="ft60"><b>Sélectionner&#160;des&#160;colonnes&#160;spécifiques</b></p>
+<p style="position:absolute;top:225px;left:114px;white-space:nowrap" class="ft69"><b>SELECT department_id,&#160;location_id<br/>FROM&#160;&#160; departments;</b></p>
+</div>
+<!-- Page 7 -->
+<a name="7"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft710{font-size:32px;line-height:35px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page7-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:263px;white-space:nowrap" class="ft70"><b>Ecrire des&#160;instructions&#160;SQL</b></p>
+<p style="position:absolute;top:170px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:176px;left:105px;white-space:nowrap" class="ft710"><b>Les&#160;instructions&#160;SQL&#160;ne&#160;distinguent&#160;pas&#160;les&#160;majuscules&#160;des&#160;<br/>minuscules.</b></p>
+<p style="position:absolute;top:249px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:255px;left:105px;white-space:nowrap" class="ft710"><b>Les&#160;instructions&#160;SQL&#160;peuvent&#160;être&#160;écrites sur&#160;une&#160;ou&#160;<br/>plusieurs&#160;lignes.</b></p>
+<p style="position:absolute;top:329px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:335px;left:105px;white-space:nowrap" class="ft710"><b>Les&#160;mots-clés&#160;ne&#160;peuvent&#160;pas&#160;être abrégés&#160;ou&#160;répartis&#160;sur&#160;<br/>plusieurs&#160;lignes.</b></p>
+<p style="position:absolute;top:408px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:414px;left:105px;white-space:nowrap" class="ft710"><b>Les&#160;clauses&#160;sont&#160;généralement&#160;placées&#160;sur&#160;des&#160;lignes&#160;<br/>distinctes.</b></p>
+<p style="position:absolute;top:487px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:493px;left:105px;white-space:nowrap" class="ft72"><b>Des indentations&#160;sont&#160;utilisées&#160;pour&#160;améliorer la lisibilité.</b></p>
+<p style="position:absolute;top:531px;left:51px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:537px;left:105px;white-space:nowrap" class="ft710"><b>Dans&#160;SQL*Plus,&#160;vous&#160;devez&#160;terminer&#160;chaque&#160;instruction&#160;<br/>SQL&#160;par&#160;un&#160;point-virgule&#160;(;).</b></p>
+</div>
+<!-- Page 8 -->
+<a name="8"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft811{font-size:30px;font-family:ArialMT;color:#ff0000;}
+	.ft812{font-size:30px;line-height:43px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page8-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:139px;white-space:nowrap" class="ft80"><b>Caractéristiques&#160;par défaut&#160;des&#160;en-têtes&#160;</b></p>
+<p style="position:absolute;top:126px;left:429px;white-space:nowrap" class="ft80"><b>de colonne</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft83">•</p>
+<p style="position:absolute;top:224px;left:171px;white-space:nowrap" class="ft82"><b>SQL*Plus&#160;:</b></p>
+<p style="position:absolute;top:265px;left:185px;white-space:nowrap" class="ft811">–&#160;<b>En-têtes&#160;des&#160;colonnes&#160;de&#160;type&#160;caractère&#160;et&#160;date&#160;alignés&#160;</b></p>
+<p style="position:absolute;top:306px;left:225px;white-space:nowrap" class="ft86"><b>à gauche</b></p>
+<p style="position:absolute;top:344px;left:185px;white-space:nowrap" class="ft812">–&#160;<b>En-têtes&#160;des&#160;colonnes&#160;de&#160;type&#160;nombre&#160;alignés&#160;à&#160;droite<br/></b>–&#160;<b>Affichage&#160;par&#160;défaut&#160;des&#160;en-têtes&#160;:&#160;majuscules</b></p>
+</div>
+<!-- Page 9 -->
+<a name="9"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft913{font-size:27px;font-family:Arial;color:#000000;}
+	.ft914{font-size:32px;line-height:39px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page9-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:271px;white-space:nowrap" class="ft90"><b>Expressions&#160;arithmétiques</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft914"><b>Créez les&#160;expressions&#160;avec&#160;des données&#160;de type&#160;<br/>nombre&#160;et&#160;date&#160;à l'aide d'opérateurs&#160;arithmétiques.</b></p>
+<p style="position:absolute;top:333px;left:291px;white-space:nowrap" class="ft913"><b>Opérateur</b></p>
+<p style="position:absolute;top:333px;left:453px;white-space:nowrap" class="ft913"><b>Description</b></p>
+<p style="position:absolute;top:376px;left:360px;white-space:nowrap" class="ft913"><b>+</b></p>
+<p style="position:absolute;top:376px;left:453px;white-space:nowrap" class="ft913"><b>Ajouter</b></p>
+<p style="position:absolute;top:419px;left:364px;white-space:nowrap" class="ft913"><b>-</b></p>
+<p style="position:absolute;top:419px;left:453px;white-space:nowrap" class="ft913"><b>Soustraire</b></p>
+<p style="position:absolute;top:464px;left:364px;white-space:nowrap" class="ft913"><b>*</b></p>
+<p style="position:absolute;top:464px;left:453px;white-space:nowrap" class="ft913"><b>Multiplier</b></p>
+<p style="position:absolute;top:508px;left:365px;white-space:nowrap" class="ft913"><b>/</b></p>
+<p style="position:absolute;top:508px;left:453px;white-space:nowrap" class="ft913"><b>Diviser</b></p>
+</div>
+<!-- Page 10 -->
+<a name="10"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1015{font-size:36px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page10-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:225px;left:114px;white-space:nowrap" class="ft109"><b>SELECT last_name, salary,&#160;salary&#160;+ 300<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:75px;left:169px;white-space:nowrap" class="ft100"><b>Utiliser des&#160;opérateurs&#160;arithmétiques</b></p>
+<p style="position:absolute;top:481px;left:123px;white-space:nowrap" class="ft1015"><b>…</b></p>
+</div>
+<!-- Page 11 -->
+<a name="11"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page11-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:226px;left:114px;white-space:nowrap" class="ft119"><b>SELECT last_name, salary,&#160;12*salary+100<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:75px;left:310px;white-space:nowrap" class="ft110"><b>Priorité des&#160;opérateurs</b></p>
+<p style="position:absolute;top:467px;left:114px;white-space:nowrap" class="ft119"><b>SELECT last_name, salary,&#160;12*(salary+100)<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:386px;left:131px;white-space:nowrap" class="ft1115"><b>…</b></p>
+<p style="position:absolute;top:633px;left:129px;white-space:nowrap" class="ft1115"><b>…</b></p>
+<p style="position:absolute;top:245px;left:913px;white-space:nowrap" class="ft1115"><b>1</b></p>
+<p style="position:absolute;top:482px;left:913px;white-space:nowrap" class="ft1115"><b>2</b></p>
+</div>
+<!-- Page 12 -->
+<a name="12"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page12-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:301px;white-space:nowrap" class="ft120"><b>Définir une&#160;valeur&#160;NULL</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft123">•</p>
+<p style="position:absolute;top:225px;left:171px;white-space:nowrap" class="ft1214"><b>Une&#160;valeur&#160;NULL&#160;est&#160;une&#160;valeur&#160;qui&#160;n'est&#160;pas&#160;<br/>disponible,&#160;pas&#160;affectée,&#160;inconnue&#160;ou&#160;inapplicable.</b></p>
+<p style="position:absolute;top:306px;left:117px;white-space:nowrap" class="ft123">•</p>
+<p style="position:absolute;top:312px;left:171px;white-space:nowrap" class="ft1214"><b>Une&#160;valeur&#160;NULL&#160;est&#160;différente&#160;d'un&#160;zéro ou&#160;d'un&#160;<br/>espace.</b></p>
+<p style="position:absolute;top:402px;left:133px;white-space:nowrap" class="ft129"><b>SELECT last_name, job_id,&#160;salary,&#160;commission_pct<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:548px;left:130px;white-space:nowrap" class="ft1215"><b>…</b></p>
+<p style="position:absolute;top:652px;left:132px;white-space:nowrap" class="ft1215"><b>…</b></p>
+</div>
+<!-- Page 13 -->
+<a name="13"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page13-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:328px;left:131px;white-space:nowrap" class="ft139"><b>SELECT last_name, 12*salary*commission_pct<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:75px;left:312px;white-space:nowrap" class="ft130"><b>Valeurs&#160;NULL&#160;dans&#160;les&#160;</b></p>
+<p style="position:absolute;top:126px;left:274px;white-space:nowrap" class="ft130"><b>expressions&#160;arithmétiques</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft1314"><b>Les&#160;expressions&#160;arithmétiques&#160;contenant&#160;une&#160;valeur&#160;<br/>NULL&#160;renvoient&#160;une&#160;valeur&#160;NULL.</b></p>
+<p style="position:absolute;top:583px;left:126px;white-space:nowrap" class="ft1315"><b>…</b></p>
+<p style="position:absolute;top:484px;left:127px;white-space:nowrap" class="ft1315"><b>…</b></p>
+</div>
+<!-- Page 14 -->
+<a name="14"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1416{font-size:32px;line-height:37px;font-family:Arial;color:#000000;}
+-->
+</style>
+<div id="page14-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:273px;white-space:nowrap" class="ft140"><b>Définir un&#160;alias&#160;de colonne</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft142"><b>Un&#160;alias&#160;de&#160;colonne&#160;:</b></p>
+<p style="position:absolute;top:266px;left:117px;white-space:nowrap" class="ft143">•</p>
+<p style="position:absolute;top:272px;left:171px;white-space:nowrap" class="ft142"><b>Renomme&#160;un&#160;en-tête&#160;de&#160;colonne</b></p>
+<p style="position:absolute;top:313px;left:117px;white-space:nowrap" class="ft143">•</p>
+<p style="position:absolute;top:320px;left:171px;white-space:nowrap" class="ft142"><b>Est utile&#160;avec les calculs</b></p>
+<p style="position:absolute;top:361px;left:117px;white-space:nowrap" class="ft143">•</p>
+<p style="position:absolute;top:367px;left:171px;white-space:nowrap" class="ft1416"><b>Suit&#160;immédiatement&#160;le nom&#160;d'une&#160;colonne&#160;(le&#160;mot-clé&#160;<br/>facultatif&#160;</b></p>
+<p style="position:absolute;top:401px;left:318px;white-space:nowrap" class="ft144"><b>AS&#160;peut&#160;également&#160;être utilisé&#160;entre&#160;le&#160;nom de&#160;</b></p>
+<p style="position:absolute;top:446px;left:171px;white-space:nowrap" class="ft142"><b>la colonne&#160;et&#160;l'alias)</b></p>
+<p style="position:absolute;top:488px;left:117px;white-space:nowrap" class="ft143">•</p>
+<p style="position:absolute;top:494px;left:171px;white-space:nowrap" class="ft1414"><b>Nécessite&#160;des&#160;guillemets&#160;s'il contient&#160;des&#160;espaces&#160;ou&#160;<br/>des&#160;caractères spéciaux,&#160;ou&#160;s'il distingue&#160;les&#160;<br/>majuscules&#160;des&#160;minuscules</b></p>
+</div>
+<!-- Page 15 -->
+<a name="15"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page15-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:258px;white-space:nowrap" class="ft150"><b>Utiliser des&#160;alias&#160;de&#160;colonne</b></p>
+<p style="position:absolute;top:488px;left:125px;white-space:nowrap" class="ft159"><b>SELECT last_name&#160;&#34;Name&#34; ,&#160;salary*12&#160;&#34;Annual&#160;Salary&#34;<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:225px;left:126px;white-space:nowrap" class="ft159"><b>SELECT last_name&#160;AS&#160;name,&#160;commission_pct&#160;comm<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:401px;left:121px;white-space:nowrap" class="ft1515"><b>…</b></p>
+<p style="position:absolute;top:665px;left:121px;white-space:nowrap" class="ft1515"><b>…</b></p>
+</div>
+<!-- Page 16 -->
+<a name="16"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page16-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:261px;white-space:nowrap" class="ft160"><b>Opérateur&#160;de&#160;concaténation</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft162"><b>Un&#160;opérateur&#160;de concaténation&#160;:</b></p>
+<p style="position:absolute;top:266px;left:117px;white-space:nowrap" class="ft163">•</p>
+<p style="position:absolute;top:272px;left:171px;white-space:nowrap" class="ft1614"><b>Lie&#160;des&#160;colonnes&#160;ou&#160;des&#160;chaînes&#160;de&#160;caractères à&#160;<br/>d'autres&#160;colonnes</b></p>
+<p style="position:absolute;top:353px;left:117px;white-space:nowrap" class="ft163">•</p>
+<p style="position:absolute;top:359px;left:171px;white-space:nowrap" class="ft162"><b>Est représenté&#160;par&#160;deux&#160;barres&#160;verticales&#160;(||)</b></p>
+<p style="position:absolute;top:400px;left:117px;white-space:nowrap" class="ft163">•</p>
+<p style="position:absolute;top:407px;left:171px;white-space:nowrap" class="ft1614"><b>Crée une&#160;colonne&#160;résultante&#160;qui&#160;est&#160;une&#160;<br/>expression&#160;de&#160;type&#160;caractère</b></p>
+<p style="position:absolute;top:503px;left:114px;white-space:nowrap" class="ft167"><b>SELECT</b></p>
+<p style="position:absolute;top:503px;left:256px;white-space:nowrap" class="ft167"><b>last_name||job_id AS&#160;&#34;Employees&#34;</b></p>
+<p style="position:absolute;top:535px;left:114px;white-space:nowrap" class="ft167"><b>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:672px;left:113px;white-space:nowrap" class="ft1615"><b>…</b></p>
+</div>
+<!-- Page 17 -->
+<a name="17"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page17-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:224px;white-space:nowrap" class="ft170"><b>Chaînes&#160;de caractères&#160;littérales</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft173">•</p>
+<p style="position:absolute;top:224px;left:171px;white-space:nowrap" class="ft1716"><b>Un&#160;littéral&#160;est&#160;un&#160;caractère, un&#160;nombre&#160;ou&#160;une&#160;date&#160;<br/>inclus&#160;dans&#160;l'instruction&#160;</b></p>
+<p style="position:absolute;top:258px;left:560px;white-space:nowrap" class="ft174"><b>SELECT.</b></p>
+<p style="position:absolute;top:305px;left:117px;white-space:nowrap" class="ft173">•</p>
+<p style="position:absolute;top:312px;left:171px;white-space:nowrap" class="ft1714"><b>Les&#160;valeurs&#160;littérales&#160;de&#160;type&#160;date&#160;et caractère&#160;<br/>doivent&#160;être&#160;incluses&#160;entre&#160;apostrophes.</b></p>
+<p style="position:absolute;top:393px;left:117px;white-space:nowrap" class="ft173">•</p>
+<p style="position:absolute;top:399px;left:171px;white-space:nowrap" class="ft1714"><b>Chaque&#160;chaîne&#160;de&#160;caractères&#160;est sortie&#160;une&#160;fois&#160;<br/>pour&#160;chaque&#160;ligne&#160;renvoyée.</b></p>
+</div>
+<!-- Page 18 -->
+<a name="18"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page18-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:74px;left:105px;white-space:nowrap" class="ft180"><b>Utiliser des&#160;chaînes&#160;de&#160;caractères&#160;littérales</b></p>
+<p style="position:absolute;top:581px;left:126px;white-space:nowrap" class="ft1815"><b>…</b></p>
+<p style="position:absolute;top:243px;left:114px;white-space:nowrap" class="ft187"><b>SELECT last_name&#160;||'&#160;is a&#160;'||job_id&#160;</b></p>
+<p style="position:absolute;top:275px;left:227px;white-space:nowrap" class="ft187"><b>AS&#160;&#34;Employee&#160;Details&#34;</b></p>
+<p style="position:absolute;top:308px;left:114px;white-space:nowrap" class="ft187"><b>FROM&#160;&#160; employees;</b></p>
+</div>
+<!-- Page 19 -->
+<a name="19"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page19-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:76px;left:158px;white-space:nowrap" class="ft190"><b>Opérateur&#160;de&#160;délimitation&#160;(</b></p>
+<p style="position:absolute;top:71px;left:693px;white-space:nowrap" class="ft195"><b>q) alternatif</b></p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft193">•</p>
+<p style="position:absolute;top:225px;left:171px;white-space:nowrap" class="ft1914"><b>Indiquer&#160;votre&#160;propre&#160;délimiteur&#160;de&#160;chaînes&#160;de&#160;<br/>caractères</b></p>
+<p style="position:absolute;top:306px;left:117px;white-space:nowrap" class="ft193">•</p>
+<p style="position:absolute;top:312px;left:171px;white-space:nowrap" class="ft192"><b>Choisir&#160;n'importe&#160;quel&#160;délimiteur</b></p>
+<p style="position:absolute;top:353px;left:117px;white-space:nowrap" class="ft193">•</p>
+<p style="position:absolute;top:359px;left:171px;white-space:nowrap" class="ft192"><b>Améliorer la lisibilité&#160;et la&#160;simplicité&#160;d'utilisation</b></p>
+<p style="position:absolute;top:408px;left:114px;white-space:nowrap" class="ft197"><b>SELECT department_name&#160;||&#160;</b></p>
+<p style="position:absolute;top:440px;left:227px;white-space:nowrap" class="ft199"><b>q'[,&#160;it's&#160;assigned&#160;Manager&#160;Id:&#160;]'&#160;<br/>||&#160;manager_id&#160;<br/>AS&#160;&#34;Department&#160;and&#160;Manager&#34;&#160;</b></p>
+<p style="position:absolute;top:537px;left:114px;white-space:nowrap" class="ft197"><b>FROM&#160;departments;</b></p>
+<p style="position:absolute;top:686px;left:135px;white-space:nowrap" class="ft1915"><b>…</b></p>
+</div>
+<!-- Page 20 -->
+<a name="20"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page20-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:367px;white-space:nowrap" class="ft200"><b>Lignes&#160;en double</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft2014"><b>Par défaut,&#160;les interrogations&#160;renvoient&#160;toutes&#160;les&#160;<br/>lignes,&#160;y&#160;compris&#160;les&#160;lignes&#160;en&#160;double.</b></p>
+<p style="position:absolute;top:314px;left:114px;white-space:nowrap" class="ft209"><b>SELECT department_id<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:466px;left:111px;white-space:nowrap" class="ft2015"><b>…</b></p>
+<p style="position:absolute;top:540px;left:114px;white-space:nowrap" class="ft209"><b>SELECT DISTINCT&#160;department_id<br/>FROM&#160;&#160; employees;</b></p>
+<p style="position:absolute;top:693px;left:117px;white-space:nowrap" class="ft2015"><b>…</b></p>
+<p style="position:absolute;top:330px;left:905px;white-space:nowrap" class="ft2015"><b>1</b></p>
+<p style="position:absolute;top:558px;left:905px;white-space:nowrap" class="ft2015"><b>2</b></p>
+</div>
+<!-- Page 21 -->
+<a name="21"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page21-div" style="position:relative;width:1080px;height:810px;">
+<p style="position:absolute;top:75px;left:447px;white-space:nowrap" class="ft210"><b>Synthèse</b></p>
+<p style="position:absolute;top:224px;left:104px;white-space:nowrap" class="ft212"><b>Ce TP&#160;vous&#160;a permis&#160;d'apprendre&#160;à&#160;:</b></p>
+<p style="position:absolute;top:264px;left:117px;white-space:nowrap" class="ft213">•</p>
+<p style="position:absolute;top:270px;left:171px;white-space:nowrap" class="ft212"><b>écrire&#160;une&#160;instruction&#160;</b></p>
+<p style="position:absolute;top:266px;left:518px;white-space:nowrap" class="ft214"><b>SELECT&#160;qui&#160;:</b></p>
+<p style="position:absolute;top:312px;left:185px;white-space:nowrap" class="ft2112">–&#160;<b>renvoie toutes&#160;les&#160;lignes et&#160;colonnes&#160;d'une table<br/></b>–&#160;<b>renvoie des&#160;colonnes&#160;particulières&#160;d'une table<br/></b>–&#160;<b>utilise&#160;des&#160;alias&#160;de&#160;colonne&#160;pour&#160;afficher&#160;des&#160;en-</b></p>
+<p style="position:absolute;top:440px;left:225px;white-space:nowrap" class="ft216"><b>têtes&#160;plus&#160;évocateurs</b></p>
+<p style="position:absolute;top:594px;left:114px;white-space:nowrap" class="ft219"><b>SELECT *|{[DISTINCT]&#160;<i>column</i></b><b>|<i>expression&#160;</i></b><b>[<i>alias</i></b><b>],...}<br/>FROM&#160;<i>table;</i></b></p>
+</div>
+</body>
+</html>
