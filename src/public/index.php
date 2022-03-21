@@ -20,31 +20,22 @@ include '/var/www/html/api/convertPdfHtml/vendor/autoload.php';
 
 if(isset($_POST['submit'])){
 
-
-  $upload=new fileUpload($_FILES['fileToUpload'],false);
-  $upload->setDestination('/var/www/html/api/convertPdfHtml/input/');
-  $upload->uploadfile(['pdf']);
+$toFileUpload=array(
+  "file"=>$_FILES['fileToUpload'],
+  'uniqueName'=>true,
+  // serverDownloadDir it's the input for the converter 
+  "serverDownloadDir"=>'/var/www/html/api/convertPdfHtml/input/',
+  "htmlOutputDir"=>'/var/www/html/api/convertPdfHtml/output',
+  "allowedExtention"=>['pdf'],
+  
+);
+  $upload=new fileUpload($toFileUpload);
+  $upload->uploadfile();
   $converter=new Convert($upload);
-  $converter->convert('/var/www/html/api/convertPdfHtml/output');
+  $converter->convert($toFileUpload['htmlOutputDir']);
 
 }
 
-/*
-    $targetFile= "/var/www/html/api/convertPdfHtml/input/".$_FILES['fileToUpload']['name'];
-    move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$targetFile);
-    echo $targetFile;
-
-
-
-$options = (new PdfToHtmlOptions())
-    ->setBinPath('/usr/bin/pdftohtml')
-    ->setOutputFolder('/var/www/html/api/convertPdfHtml/output')
-    ->setOutputFilePath('/var/www/html/api/convertPdfHtml/output/'.$_FILES['fileToUpload']['name']);
-;
-// initiate
-$converterFactory = new ConverterFactory($targetFile);
-$converter = $converterFactory->createPdfToHtml($options);
-$html = $converter->createHtml();*/
 
 
 ?>

@@ -6,10 +6,14 @@ class fileUpload extends File
 
 
     private $fileUploadLocation; 
+    private $allowedExtention;
 
-    function  __construct(array $file,$UniqueName=false){
-        parent::__construct($file);
-        if($UniqueName==true){
+
+    function  __construct(array $param){
+        parent::__construct($param['file']);
+        $this->allowedExtention=$param['allowedExtention'];
+        $this->fileUploadLocation=$param['serverDownloadDir'];
+        if($param['uniqueName']==true){
             parent::setUniqueFileName();
         }
     }
@@ -23,9 +27,9 @@ class fileUpload extends File
 
     // upload the file == move from tmp to the given directory 
 
-    public function uploadfile(array $allowedExtention){
+    public function uploadfile(){
         // verify extention 
-        if(parent::checkIfExtensionIsAllowed($allowedExtention)){
+        if(parent::checkIfExtensionIsAllowed($this->allowedExtention)){
             move_uploaded_file(parent::getFileLocation(),$this->fileUploadLocation.$this->getfileName());
             
         }

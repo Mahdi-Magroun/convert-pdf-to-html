@@ -22,7 +22,7 @@ class File {
 
 
     public function setUniqueFileName(){
-        $this->fileName=uniqid().$this->fileExtension;
+        $this->fileName=uniqid().'.'.$this->fileExtension;
     }
 
 
