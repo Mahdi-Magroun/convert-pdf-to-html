@@ -20,6 +20,13 @@ class File {
     }
 
 
+    public static function displayFileContent($path){
+        $myfile = fopen($path, "r") or die("Unable to open file!");
+        echo fread($myfile,filesize($path));
+    fclose($myfile);
+    }
+
+
 
     public function setUniqueFileName(){
         $this->fileName=uniqid().'.'.$this->fileExtension;

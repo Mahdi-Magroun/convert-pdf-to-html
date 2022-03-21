@@ -33,7 +33,7 @@ $toFileUpload=array(
   $upload->uploadfile();
   $converter=new Convert($upload);
   $converter->convert($toFileUpload['htmlOutputDir']);
-
+  $converter->returnHtml();
 }
 
 

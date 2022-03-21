@@ -41,6 +41,11 @@ private function setOutPut(string $Path){
 
 }
 
+public function returnHtml(){
+    $htmlFileName= $this->outputfolder.'/'.pathinfo($this->outputFilePath, PATHINFO_FILENAME)."."."pdf.html";
+    File::displayFileContent($htmlFileName);
+}
+
 
 
 }
