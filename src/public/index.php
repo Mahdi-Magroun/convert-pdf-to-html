@@ -8,10 +8,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
   $toFileUpload=array(
     "file"=>$_FILES['fileToUpload'],
+    // if you want set a unique name for your file to avoid losing data
     'uniqueName'=>true,
    // serverDownloadDir it's the input for the converter 
     "serverDownloadDir"=>'/var/www/html/api/convertPdfHtml/input/',
+    // where html code is downloaded
     "htmlOutputDir"=>'/var/www/html/api/convertPdfHtml/output',
+    // allowed extention in ower case only pdf
    "allowedExtention"=>['pdf'],
   
 );
