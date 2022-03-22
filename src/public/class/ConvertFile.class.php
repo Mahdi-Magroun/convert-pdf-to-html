@@ -29,6 +29,7 @@ $converter->createHtml();
 
 private function setOption(){
     $this->options = (new PdfToHtmlOptions())
+    // to find bin path execute : whereis pdftohtml
     ->setBinPath('/usr/bin/pdftohtml')
     ->setOutputFolder($this->outputfolder)
     ->setOutputFilePath($this->outputFilePath);
