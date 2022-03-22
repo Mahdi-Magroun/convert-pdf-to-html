@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     // where html code is downloaded
     "htmlOutputDir"=>'/var/www/html/api/convertPdfHtml/output',
     // allowed extention in ower case only pdf
-   "allowedExtention"=>['pdf'],cdc
+   "allowedExtention"=>['pdf'],
   
 );
   $upload=new fileUpload($toFileUpload);
