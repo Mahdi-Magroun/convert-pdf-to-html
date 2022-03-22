@@ -2,11 +2,12 @@
 
 ## Requirements
 1. Poppler-Utils (if you are using Ubuntu Distro, just install it from apt )
-
+```bash
 `sudo apt-get install poppler-utils`
+```
+## usage 
+```php
 
-# usage 
-`̀`̀ php
 <?php
 require_once('class/ConvertFile.class.php');
 // if you are using composer, just use this
@@ -24,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     // where html code is downloaded
     "htmlOutputDir"=>'/var/www/html/api/convertPdfHtml/output',
     // allowed extention in ower case only pdf
-   "allowedExtention"=>['pdf'],
+   "allowedExtention"=>['pdf'],cdc
   
 );
   $upload=new fileUpload($toFileUpload);
